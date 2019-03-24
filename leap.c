@@ -2,25 +2,23 @@
 
 int main()
 {
-    int y;
+    int ye;
+    scanf("%d",&ye);
 
-    printf("Enter a year: ");
-    scanf("%d",&y);
-
-    if(y%4 == 0)
+    if(ye%4 == 0)
     {
-        if( y%100 == 0)
+        if( ye%100 == 0)
         {
             if ( y%400 == 0)
-                printf("%d is a leap year.", y);
+                printf("%d is a leap year.",ye);
             else
-                printf("%d is not a leap year.", y);
+                printf("%d is not a leap year.",ye);
         }
         else
-            printf("%d is a leap year.", y );
+            printf("%d is a leap year.",ye );
     }
     else
-        printf("%d is not a leap year.", y);
+        printf("%d is not a leap year.",ye);
     
     return 0;
 }
