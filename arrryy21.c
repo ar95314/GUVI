@@ -2,12 +2,12 @@
 
 int main(void) {
 	// your code goes here
-	int full,half,i,sum=0;
-	scanf("%d%d",&full,&half);
+	int f,h,i,sum=0;
+	scanf("%d%d",&f,&h);
 	
-		for(full=1;full<=half;full++)
+		for(f=1;f<=h;f++)
 		{
-			sum=sum+full;
+			sum=sum+f;
 		
 		}
 		printf("%d",sum);
