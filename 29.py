@@ -1,2 +1,2 @@
 b=int(input())
-print(a//60,a%60)
+print(b//60,b%60)
