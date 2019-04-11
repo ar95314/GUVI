@@ -1,10 +1,10 @@
 import java.util.Scanner;
 class Main { 
 
-	static int findMinLength(String arr[], int n) 
+	static int findMinLength(String arr[], int m) 
 	{ 
 		int min = Integer.MAX_VALUE; 
-		for (int i = 0; i <= (n - 1); i++) 
+		for (int i = 0; i <= (m - 1); i++) 
 		{ 
 			if (arr[i].length() < min) { 
 				min = arr[i].length(); 
@@ -13,10 +13,10 @@ class Main {
 		return min; 
 	} 
 
-	static boolean allContainsPrefix(String arr[], int n, 
+	static boolean allContainsPrefix(String arr[], int m, 
 						String str, int start, int end) 
 	{ 
-		for (int i = 0; i <= (n - 1); i++) 
+		for (int i = 0; i <= (m - 1); i++) 
 		{ 
 			String arr_i = arr[i]; 
 			
@@ -27,9 +27,9 @@ class Main {
 		return true; 
 	} 
 
-	static String commonPrefix(String arr[], int n) 
+	static String commonPrefix(String arr[], int m) 
 	{ 
-		int index = findMinLength(arr, n); 
+		int index = findMinLength(arr, m); 
 		String prefix = "";  
 
 		int low = 0, high = index; 
@@ -37,7 +37,7 @@ class Main {
 			
 			int mid = low + (high - low) / 2; 
 
-			if (allContainsPrefix(arr, n, arr[0], low, 
+			if (allContainsPrefix(arr, m, arr[0], low, 
 												mid)) 
 			{ 
 				 
@@ -59,14 +59,14 @@ class Main {
 		String arr[] = new String[50];
 		Scanner sc = new Scanner(System.in);
 		int k =sc.nextInt();
-		int n=0;
+		int m=0;
 		for(int i=0;i<k;i++)
 		{
 		    arr[i]=sc.next();
 		    n++;
 		}
 		
-        String ans = commonPrefix(arr, n); 
+        String ans = commonPrefix(arr, m); 
 		
 		if (ans.length() > 0) 
 			System.out.println(ans); 
