@@ -1,5 +1,5 @@
 m=int(input())
-k=round(pow(n,0.5))
+k=round(pow(m,0.5))
 li=[]
 for i in range(0,k):
     t=pow(2,i)
