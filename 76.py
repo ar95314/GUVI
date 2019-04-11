@@ -1,11 +1,11 @@
 class checkcomposite:
-  def notprime(self,n):
-    for i in range(2,n):
-      if n%i==0:
+  def notprime(self,w):
+    for i in range(2,w):
+      if w%i==0:
         print("yes")
         break
     else:
       print("no")
-n=int(input())
-c=checkcomposite()
-c.notprime(n)
+w=int(input())
+d=checkcomposite()
+d.notprime(n)
