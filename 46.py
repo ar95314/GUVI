@@ -1,2 +1,2 @@
-q=int(input())
-print(q+1)
+z=int(input())
+print(z+1)
