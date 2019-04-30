@@ -1,11 +1,10 @@
-n,q = map(int,input().split())
-lis = list(map(int,input().split()))
-st1 = ""
-for i in range(q):
-    u,v = map(int,input().split())
-    ans  = min(lis[u-1:v+1])
-    if(i == 0):
-        st1 = st+str(ans)
-    else:
-        st1 = st1+"\n"+str(ans)
-print(st)
+amu1=raw_input().split()
+amu1=list(map(int,amu1))
+s=raw_input().split()
+s=list(map(int,s))
+c=[]
+for i in range(amu1[1]):
+  d=raw_input().split()
+  c.append(list(map(int,d)))
+for i in range(amu1[1]):
+  print(min(s[(c[i][0]-1):c[i][1]]))
