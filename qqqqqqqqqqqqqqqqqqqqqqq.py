@@ -1,8 +1,11 @@
-import sys, string, math
-n1,k = input().split()
-n1,k = int(n1), int(k)
-L = [ int(x) for x in input().split()]
-for i in range(0,k) :
-     a,b = input().split()
-     a,b = int(a), int(b)
-     print(min(L[a-1:b]))
+n,q = map(int,input().split())
+lis = list(map(int,input().split()))
+st1 = ""
+for i in range(q):
+    u,v = map(int,input().split())
+    ans  = min(lis[u-1:v+1])
+    if(i == 0):
+        st1 = st+str(ans)
+    else:
+        st1 = st1+"\n"+str(ans)
+print(st)
