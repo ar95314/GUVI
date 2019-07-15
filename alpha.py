@@ -1,6 +1,5 @@
-a=raw_input("")
-print("a")
-if(x>'a'):
+x=input("")
+if((x >='a' and x <='z') or (x >='A' and x <= 'Z')):
  print("Alphabet")
 else:
- print("not Alphabet")
+ print("No")
