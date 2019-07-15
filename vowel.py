@@ -1,5 +1,8 @@
-a = input("Enter the alpabet");
-if(a=='A' or a=='a' or a=='E'or a=='e' or a=='I'or a=='i' or a=='O' or a=='o' or a=='U'or a=='u'):
- print("is avowel")
+n = input()
+if ((n>='a' and n<='z')or(n>='A' and n<='Z')):
+    if(n == 'a' or n == 'e' or n == 'i' or n == 'o' or n == 'u' or n == 'A' or n == 'E' or n == 'I' or n == 'O' or n == 'U' ):
+        print('Vowel')
+    else:
+        print('Consonant')
 else:
- print("is a consoent")
+    print('Invalid')
